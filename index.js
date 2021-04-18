@@ -28,7 +28,7 @@ function getMovies(e) {
     sessionStorage.setItem('searchText', value);
     sessionStorage.setItem('userSearched', true);
     if(value.length > 2) {
-        const url = `http://www.omdbapi.com/?s=${value}&apikey=a5a3bcde`;
+        const url = `https://www.omdbapi.com/?s=${value}&apikey=a5a3bcde`;
         fetch(url)
         .then(response => response.json())
         .then(moviesObj => {

@@ -2,7 +2,7 @@ const imdbId = location.search.split('=')[1];
 
 
 const getMovieDetails = (id) => {
-    const url = `http://www.omdbapi.com/?i=${id}&apikey=a5a3bcde`;
+    const url = `https://www.omdbapi.com/?i=${id}&apikey=a5a3bcde`;
     fetch(url)
     .then(resp => resp.json())
     .then(data => showMovieDetails(data));
